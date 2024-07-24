@@ -44,17 +44,17 @@ const Index = () => {
 
               <div className="flex items-center gap-[80px] bg-[#F2F2F2] py-[17px] px-[20px] rounded-[5px]">
                   <input type="text" placeholder="Поиск" className="outline-none w-[360px] bg-[#F2F2F2]" />
-                  <i class='bx cursor-pointer bx-search'></i>
+                  <i className='bx cursor-pointer bx-search'></i>
               </div>  
             </li>
 
             <li className="flex items-center gap-[13px]">
               <div className="p-[13px] hover:bg-[#CCCCCC] active:bg-[#F2F2F2] transition-all duration-300 bg-[#F2F2F2] rounded-[3px] cursor-pointer">
-                <i class='text-[20px] bx bx-user' ></i>
+                <i className='text-[20px] bx bx-user' ></i>
               </div>
 
               <div className="mr-[12px] p-[13px] hover:bg-[#CCCCCC] active:bg-[#F2F2F2] transition-all duration-300  bg-[#F2F2F2] rounded-[3px] cursor-pointer">
-                <i class='bx text-[20px] bx-heart' ></i>
+                <i className='bx text-[20px] bx-heart' ></i>
               </div>
 
               <div className="px-[30px] py-[15px] hover:bg-[#CCCCCC] active:bg-[#F2F2F2] transition-all duration-300  rounded-[5px] bg-[#F2F2F2] cursor-pointer">

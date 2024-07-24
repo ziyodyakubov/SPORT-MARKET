@@ -34,8 +34,8 @@ const Index = () => {
           </li>
 
           <li className="flex items-center relative bottom-[60px] gap-[13px]">
-            <i class='text-[#FFf] text-[24px] opacity-[0.8] bx bx-map'></i>
-            <h2 class="text-[#FFFFFF] font-[400] opacity-[0.8] text-[16px] w-[235px]">Tashkent Sh. Chilonzor 9 kvartal 12 uy</h2>
+            <i className='text-[#FFf] text-[24px] opacity-[0.8] bx bx-map'></i>
+            <h2 className="text-[#FFFFFF] font-[400] opacity-[0.8] text-[16px] w-[235px]">Tashkent Sh. Chilonzor 9 kvartal 12 uy</h2>
           </li>
 
           <li className="flex flex-col gap-[16px]">
