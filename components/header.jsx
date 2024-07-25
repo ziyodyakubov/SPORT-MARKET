@@ -1,5 +1,6 @@
 import Image from "next/image"
 import {Logo,Katalog,Add} from "@/svg"
+import Link from "next/link"
 
 const Index = () => {
   return (
@@ -8,7 +9,7 @@ const Index = () => {
         <nav className="container flex items-center justify-between">
           <div className="left flex items-center gap-[30px]">
             <div className="flex gap-[11px] cursor-pointer">
-            <Image src={Logo} alt="logo"/>
+            <a href="/"><Image src={Logo} alt="logo"/></a>
             <div className="flex flex-col text-[24px] text-[#Fff] font-[600] leading-[28px]">
               <h2>Sport</h2>
               <h2>Market</h2>
@@ -16,7 +17,7 @@ const Index = () => {
             </div>
           
           <ul className="flex items-center gap-[30px]">
-            <li className="text-[#FFFFFF] font-[400] active:opacity-[0.8] hover:opacity-[1] transition-all duration-200 opacity-[0.8] text-[16px] cursor-pointer">Продукты</li>
+            <li><Link href="/product" className="text-[#FFFFFF] font-[400] active:opacity-[0.8] hover:opacity-[1] transition-all duration-200 opacity-[0.8] text-[16px] cursor-pointer">Продукты</Link></li>
             <li className="text-[#FFFFFF] font-[400] active:opacity-[0.8] hover:opacity-[1] transition-all duration-200 opacity-[0.8] text-[16px] cursor-pointer">Контакты</li>
             <li className="text-[#FFFFFF] font-[400] active:opacity-[0.8] hover:opacity-[1] transition-all duration-200 opacity-[0.8] text-[16px] cursor-pointer">Оплата и Доставка</li>
             <li className="text-[#FFFFFF] font-[400] active:opacity-[0.8] hover:opacity-[1] transition-all duration-200 opacity-[0.8] text-[16px] cursor-pointer">Новости</li>

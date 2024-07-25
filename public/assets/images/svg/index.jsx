@@ -14,5 +14,11 @@ import PrimiTwo from "./primi-2.svg"
 import PrimiThree from "./primi-3.svg"
 import PrimiFour from "./primi-4.svg"
 import Navigate from "./navigate.svg"
+import Adidas from "./adidas.svg"
+import Nike from "./nike.svg"
+import UnderArmour from "./under-armour.svg"
+import Reebok from "./reebook.svg"
+import Puma from "./puma.svg"
+import Board from "./board.svg"
 
-export {Logo,Katalog,Add,Insta,Telegram,Facebook,Left,Right,AksiyaLenta,NoviyLenta,TopLenta,PrimiOne,PrimiTwo,PrimiThree,PrimiFour,Navigate}
+export {Logo,Katalog,Add,Insta,Telegram,Facebook,Left,Right,AksiyaLenta,NoviyLenta,TopLenta,PrimiOne,PrimiTwo,PrimiThree,PrimiFour,Navigate,Adidas,Nike,UnderArmour,Reebok,Puma,Board}
