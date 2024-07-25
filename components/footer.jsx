@@ -5,7 +5,7 @@ import { Fahkwang } from "next/font/google"
 const Index = () => {
   return (
     <footer>
-      <div className="bg-[#FBD029] w-full h-[24px] mt-[200px]"></div>
+      <div className="bg-[#FBD029] w-full h-[24px]"></div>
       <div className="bg-[#1F1D14] pt-[72px] border-b-[1px] border-b-[#f2f2f244]">
         <div className="container">
         <ul className="flex justify-between pb-[44px]">

@@ -12,5 +12,6 @@ import NoviyKrossovka from "./noviy-krossovka.png"
 import ProductOne from "./product-1.png"
 import ProductTwo from "./product-2.png"
 import ProductThree from "./product-3.png"
+import Poleznoe from "./poleznoe.png"
 
-export {KatalogOne,KatalogTwo,KatalogThree,KatalogFour,KatalogFive,KatalogSix,AksiyaButsa,AksiyaGantel,AksiyaSportivka,AksiyaSumka,NoviyKrossovka,ProductOne,ProductTwo,ProductThree}
+export {KatalogOne,KatalogTwo,KatalogThree,KatalogFour,KatalogFive,KatalogSix,AksiyaButsa,AksiyaGantel,AksiyaSportivka,AksiyaSumka,NoviyKrossovka,ProductOne,ProductTwo,ProductThree,Poleznoe}

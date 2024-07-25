@@ -9,5 +9,10 @@ import Right from "./right.svg"
 import AksiyaLenta from "./aksiya-lenta.svg"
 import NoviyLenta from "./noviy-lenta.svg"
 import TopLenta from "./top-lenta.svg"
+import PrimiOne from "./primi-1.svg"
+import PrimiTwo from "./primi-2.svg"
+import PrimiThree from "./primi-3.svg"
+import PrimiFour from "./primi-4.svg"
+import Navigate from "./navigate.svg"
 
-export {Logo,Katalog,Add,Insta,Telegram,Facebook,Left,Right,AksiyaLenta,NoviyLenta,TopLenta}
+export {Logo,Katalog,Add,Insta,Telegram,Facebook,Left,Right,AksiyaLenta,NoviyLenta,TopLenta,PrimiOne,PrimiTwo,PrimiThree,PrimiFour,Navigate}

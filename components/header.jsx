@@ -16,11 +16,11 @@ const Index = () => {
             </div>
           
           <ul className="flex items-center gap-[30px]">
-            <li className="text-[#FFFFFF] font-[400] opacity-[0.8] text-[16px] cursor-pointer">Продукты</li>
-            <li className="text-[#FFFFFF] font-[400] opacity-[0.8] text-[16px] cursor-pointer">Контакты</li>
-            <li className="text-[#FFFFFF] font-[400] opacity-[0.8] text-[16px] cursor-pointer">Оплата и Доставка</li>
-            <li className="text-[#FFFFFF] font-[400] opacity-[0.8] text-[16px] cursor-pointer">Новости</li>
-            <li className="text-[#FFFFFF] font-[400] opacity-[0.8] text-[16px] cursor-pointer">О нас</li>
+            <li className="text-[#FFFFFF] font-[400] active:opacity-[0.8] hover:opacity-[1] transition-all duration-200 opacity-[0.8] text-[16px] cursor-pointer">Продукты</li>
+            <li className="text-[#FFFFFF] font-[400] active:opacity-[0.8] hover:opacity-[1] transition-all duration-200 opacity-[0.8] text-[16px] cursor-pointer">Контакты</li>
+            <li className="text-[#FFFFFF] font-[400] active:opacity-[0.8] hover:opacity-[1] transition-all duration-200 opacity-[0.8] text-[16px] cursor-pointer">Оплата и Доставка</li>
+            <li className="text-[#FFFFFF] font-[400] active:opacity-[0.8] hover:opacity-[1] transition-all duration-200 opacity-[0.8] text-[16px] cursor-pointer">Новости</li>
+            <li className="text-[#FFFFFF] font-[400] active:opacity-[0.8] hover:opacity-[1] transition-all duration-200 opacity-[0.8] text-[16px] cursor-pointer">О нас</li>
           </ul>
           </div>
           <ul className="right flex items-center gap-[30px]">

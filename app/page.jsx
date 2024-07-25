@@ -1,6 +1,6 @@
 import Image from "next/image";
-import { Left, Right, Add, AksiyaLenta,NoviyLenta,TopLenta } from "@/svg"
-import { KatalogOne, KatalogTwo, KatalogThree, KatalogFour, KatalogFive, KatalogSix, AksiyaButsa,AksiyaGantel,AksiyaSportivka,AksiyaSumka, NoviyKrossovka, ProductOne,ProductTwo,ProductThree} from "@/png"
+import { Left, Right, Add, AksiyaLenta,NoviyLenta,TopLenta,PrimiOne,PrimiTwo,PrimiThree,PrimiFour,Navigate } from "@/svg"
+import { KatalogOne, KatalogTwo, KatalogThree, KatalogFour, KatalogFive, KatalogSix, AksiyaButsa,AksiyaGantel,AksiyaSportivka,AksiyaSumka, NoviyKrossovka, ProductOne,ProductTwo,ProductThree,Poleznoe} from "@/png"
 import { Pagination, Stack } from '@mui/material';
 
 export default function Home() {
@@ -14,10 +14,18 @@ export default function Home() {
     { image: KatalogSix, title: "Горный спорт", bg: "#ABA520" },
   ]
 
+  const primi = [
+    {image: PrimiOne,title:"Доставка по всему Узбекистану"},
+    {image: PrimiTwo,title:"Доставка по всему Узбекистану"},
+    {image: PrimiThree,title:"Скидки и акции"},
+    {image: PrimiFour,title:"Широкий ассортимент товаров"},
+  ]
+
   const images = [AksiyaButsa,AksiyaGantel,AksiyaSportivka,AksiyaSumka]
   const novies = [AksiyaSportivka,NoviyKrossovka,AksiyaSumka,AksiyaGantel]
   const products = [ProductOne,ProductTwo,ProductThree,ProductOne]
   const top = [AksiyaSportivka,ProductOne,ProductThree,NoviyKrossovka]
+
   return (
     <>
     {/* SECTION 2 STARTED */}
@@ -170,7 +178,7 @@ export default function Home() {
         {/* SECTION-5 ENDED */}
 
         {/* SECTION-6 STARTED */}
-        <section id="section-6" className="pb-[86px]">
+        <section id="section-6" className="pb-[70px]">
             <div className="container">
              <div className="flex justify-between mb-[36px]">
               <h2 className="text-[32px] font-[500]">ТОП продажа</h2>
@@ -211,6 +219,85 @@ export default function Home() {
             </div>
         </section>
         {/* SECTION-6 ENDED */}
+
+        {/* SECTION-7 STARTED */}
+        <section id="section-7" className="pb-[80px]">
+          <div className="container">
+            <h2 className="text-[32px] font-[500] mb-[31px]">Полезное</h2>
+
+            <div className="flex items-center justify-between">
+             <div className="card bg-[#Fff] rounded-[8px] w-[608px] pt-[38px] pb-[44px] pl-[35px]">
+                <h3 className="w-[462px] text-[32px] font-[500] leading-normal text-[#1F1D14] mb-[9px]">Как правильно выбрать эллиптический тренажер?</h3>
+
+                <p className="w-[454px] text-[16px] font-[400] mb-[125px] opacity-[0.7]">Эллиптические тренажёры популярны среди людей любого возраста и с разным уровнем физической подготовкb Эллиптические тренажёры популярны среди людей любого возраста и с разным уровнем физической подготовки...</p>
+
+
+                <div className="flex items-center gap-[40px]">
+                  <div className="flex items-center gap-[5px]">
+                    <i className='bx bx-calendar text-[16px]'></i>
+                    <h2>27.01.2022</h2>
+                  </div>
+
+                  <div className="flex items-center gap-[5px]">
+                    <i className='bx bx-show-alt text-[16px]' ></i>
+                    <h2>250</h2>
+                  </div>
+                </div>
+             </div>
+
+             <div className="flex flex-col gap-[15px]">
+                <div className="card py-[18px] w-[608px] h-[385px] px-[145px] bg-[#fff] rounded-[8px]">
+                  <Image src={Poleznoe} alt="poleznoe"/>
+                </div>
+
+                <button className="py-[15px] px-[250px] bg-[#fff] hover:bg-[#ffffff70] transition-all duration-200 active:bg-[#Fff] rounded-[5px]">Посмотрет все</button>
+             </div>
+            </div>
+            
+          </div>
+        </section>
+        {/* SECTION-7 ENDED */}
+
+        {/* SECTION-8 STARTED */}
+        <section id="section-8" className="pb-[80px]">
+          <div className="container">
+            <h2 className="text-[32px] font-[500] mb-[30px]">Примущества</h2>
+
+            <div className="flex items-center gap-[24px] justify-between">
+              {
+                primi.map((item,index)=>(
+                  <div key={index} className="flex flex-col gap-[24px] pt-[60px] pl-[40px] pr-[30px] bg-[#fff] rounded-[8px] h-[289px] w-[292px]">
+                  <Image src={item.image} alt={item.title}/>
+
+                  <h3 className="text-[20px] font-[400]">{item.title}</h3>
+                  </div>
+                ))
+              }
+            </div>
+          </div>
+        </section>
+        {/* SECTION-8 ENDED */}
+
+        {/* SECTION-9 STARTED */}
+        <section id="section-9" className="pb-[81px]">
+          <div className="container">
+            <h2 className="text-[32px] font-[500] mb-[30px]">О нас</h2>
+
+            <div className="card h-[400px] pt-[70px] pl-[80px] pb-[101px] bg-[#1F1D14] rounded-[8px]">
+              <p className="text-[20px] text-[#fff] w-[719px] opacity-[0.8] font-[400]">Интернет магазин спортивных товаров <small className="font-[500] text-[21px]  opacity-[100] underline">7MARKETSPORT.UZ</small> предлагает широкий ассортимент продукции с доставкой по Ташкенту, области и другим регионам Узбекистана. Ведется работа как с розничными покупателями, так и с оптовыми клиентами. Разнообразие форм оплаты заметно упрощает процесс приобретения товара. Действует гибкая система скидок. Разнообразие форм оплаты заметно упрощает процесс приобретения товара. Действует гибкая система скидок. </p>
+              <Image className="cursor-pointer relative left-[1000px] top-[40px]" src={Navigate} alt="navigate"/>
+            </div>
+          </div>
+        </section>
+        {/* SECTION-9 ENDED */}
+
+        {/* SECTION-10 STARTED */}
+        <section id="section-10" className="pb-[80px]">
+            <div className="container">
+              {/* CAROUSEL CARD RENDER */}
+            </div>
+        </section>
+        {/* SECTION-10 ENDED */}
       </div>
       {/* BG WRAPPER ENDED */}
     </>
