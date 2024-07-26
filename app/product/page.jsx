@@ -120,12 +120,12 @@ const index = () => {
                   </Select>
                 </FormControl>
 
-                <FormControl sx={{ minWidth: 150, background: "#ffff" }} size="small">
+                <FormControl sx={{ minWidth: 155, background: "#ffff" }} size="small">
                   <InputLabel id="demo-select-small-label">Все продукты</InputLabel>
                   <Select
                     labelId="demo-select-small-label"
                     id="demo-select-small"
-                    label="Сортировать"
+                    label="Все продукты"
                   >
                     <MenuItem value={"sport"}>Nimadir</MenuItem>
                     <MenuItem value={"classic"}>Nimadir</MenuItem>

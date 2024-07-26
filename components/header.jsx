@@ -8,13 +8,12 @@ const Index = () => {
        <div className="pt-[10px] pb-[13px] bg-[#1F1D14]">
         <nav className="container flex items-center justify-between">
           <div className="left flex items-center gap-[30px]">
-            <div className="flex gap-[11px] cursor-pointer">
-            <a href="/"><Image src={Logo} alt="logo"/></a>
+            <a href="/" className="flex gap-[11px] cursor-pointer"><Image src={Logo} alt="logo"/>
             <div className="flex flex-col text-[24px] text-[#Fff] font-[600] leading-[28px]">
               <h2>Sport</h2>
               <h2>Market</h2>
             </div>
-            </div>
+            </a>
           
           <ul className="flex items-center gap-[30px]">
             <li><Link href="/product" className="text-[#FFFFFF] font-[400] active:opacity-[0.8] hover:opacity-[1] transition-all duration-200 opacity-[0.8] text-[16px] cursor-pointer">Продукты</Link></li>
