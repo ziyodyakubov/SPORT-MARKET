@@ -1,3 +1,5 @@
+'use client';
+import { useRouter } from 'next/navigation';
 import { InputLabel, MenuItem, FormControl, Select } from '@mui/material';
 import { Board, AksiyaLenta, NoviyLenta, TopLenta, Add } from "@/svg"
 import { AksiyaSportivka, AksiyaGantel, ProductThree, AksiyaButsa, ProductOne, ProductTwo } from "@/png"
@@ -5,6 +7,7 @@ import HomePageNavButton from '@/components/UI/HomePageNavButton';
 import Image from 'next/image';
 
 const index = () => {
+    const router = useRouter();
 
   const info = [
     { image: AksiyaSportivka },
@@ -23,6 +26,12 @@ const index = () => {
     { image: AksiyaSportivka },
     { image: AksiyaGantel, lenta: NoviyLenta }
   ]
+
+
+
+  const handleNavigate = () =>{
+    router.push('/single');
+  }
 
   const recomendations = [ProductOne, ProductTwo, ProductThree, ProductOne]
 
@@ -149,9 +158,9 @@ const index = () => {
             <div className="flex w-[924px] flex-wrap items-center justify-between gap-x-[24px] gap-y-[40px] mb-[111px]">
               {
                 info.map((item, index) => (
-                  <div key={index} className="card bg-[#Fff] rounded-[5px] w-[292px] pt-[25px] flex flex-col">
+                  <div key={index} onClick={handleNavigate} className="card bg-[#Fff] rounded-[5px] w-[292px] pt-[25px] flex flex-col">
                     <i className='bx bx-heart cursor-pointer relative text-[24px] left-[254px] bottom-[15px]'></i>
-                    <Image className="relative left-[20px] bottom-[10px]" src={item.image} alt="products image" />
+                    <Image className="relative cursor-pointer hover:scale-[1.1] transition-all duration-200 left-[20px] bottom-[10px]" src={item.image} alt="products image" />
 
                     <div className="title p-[20px] w-[230px] flex flex-col gap-[14px] pb-[14px]">
                       <h2 className="text-[20px] font-normal">Бутса Nike Mercurial Superfly 8 FG</h2>
@@ -178,7 +187,7 @@ const index = () => {
             recomendations.map((item, index) => (
               <div key={index} className="card bg-[#Fff] rounded-[5px] w-[292px] pt-[25px] flex flex-col">
                 <i className='bx bx-heart cursor-pointer relative text-[24px] left-[254px] bottom-[15px]'></i>
-                <Image className="relative left-[20px] bottom-[10px]" src={item} alt="recomendation product" />
+                <Image className="relative cursor-pointer hover:scale-[1.1] transition-all duration-200 left-[20px] bottom-[10px]" src={item} alt="recomendation product" />
 
                 <div className="title p-[20px] w-[230px] flex flex-col gap-[14px] pb-[14px]">
                   <h2 className="text-[20px] font-normal">Бутса Nike Mercurial Superfly 8 FG</h2>

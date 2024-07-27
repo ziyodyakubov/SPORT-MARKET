@@ -46,9 +46,9 @@ const Index = () => {
             <button className="py-[10px] px-[26px] hover:bg-[#fbd129de] active:bg-[#FBD029] transition-all bg-[#FBD029] rounded-[6px] text-[16px] font-[400]">Отправить</button>
 
             <div className="flex items-center gap-[20px] mt-[49px]">
-              <Image src={Insta} alt="instagram"/>
-              <Image src={Facebook} alt="facebook"/>
-              <Image src={Telegram} alt="telegram"/>
+              <Image className="cursor-pointer" src={Insta} alt="instagram"/>
+              <Image className="cursor-pointer"  src={Facebook} alt="facebook"/>
+              <Image className="cursor-pointer"  src={Telegram} alt="telegram"/>
             </div>
           </li>
         </ul>

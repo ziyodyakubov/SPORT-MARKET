@@ -1,6 +1,6 @@
 import Image from "next/image";
-import { Left, Right, Add, AksiyaLenta, NoviyLenta, TopLenta, PrimiOne, PrimiTwo, PrimiThree, PrimiFour, Navigate,Adidas,Nike,UnderArmour,Reebok,Puma } from "@/svg"
-import { KatalogOne, KatalogTwo, KatalogThree, KatalogFour, KatalogFive, KatalogSix, AksiyaButsa, AksiyaGantel, AksiyaSportivka, AksiyaSumka, NoviyKrossovka, ProductOne, ProductTwo, ProductThree, Poleznoe } from "@/png"
+import { Left, Right, Add, AksiyaLenta, NoviyLenta, TopLenta, PrimiOne, PrimiTwo, PrimiThree, PrimiFour, Navigate, Adidas, Nike, UnderArmour, Reebok, Puma } from "@/svg"
+import { KatalogOne, KatalogTwo, KatalogThree, KatalogFour, KatalogFive, KatalogSix, AksiyaButsa, AksiyaGantel, AksiyaSportivka, AksiyaSumka, NoviyKrossovka, ProductOne, ProductTwo, ProductThree, Poleznoe,AksiyaLentaTwo } from "@/png"
 import { Pagination, Stack } from '@mui/material';
 import NavigateButton from '@/components/UI/NavigateButton';
 
@@ -23,7 +23,7 @@ export default function Home() {
     { image: PrimiFour, title: "Широкий ассортимент товаров" },
   ]
 
-  const companies = [Puma,UnderArmour,Nike,Adidas,Reebok,Puma,UnderArmour]
+  const companies = [Puma, UnderArmour, Nike, Adidas, Reebok, Puma, UnderArmour]
 
   const images = [AksiyaButsa, AksiyaGantel, AksiyaSportivka, AksiyaSumka]
   const novies = [AksiyaSportivka, NoviyKrossovka, AksiyaSumka, AksiyaGantel]
@@ -34,11 +34,11 @@ export default function Home() {
   return (
     <>
       {/* SECTION-1 STARTED */}
-      <section id="section-1">
-        <div className="container">
-            
-        </div>
-      </section>
+          <section id="section-1">
+            <div className="container">
+
+            </div>
+          </section>
       {/* SECTION-1 ENDED */}
 
       {/* SECTION-2 STARTED */}
@@ -81,26 +81,24 @@ export default function Home() {
             <div className="flex items-center justify-between gap-[24px]">
               {
                 images.map((item, index) => (
-                  <div key={index} className="card bg-white rounded-[5px] w-[292px] pt-[25px] flex flex-col">
-                    <div className="flex items-center justify-between">
-                      <Image src={AksiyaLenta} alt="aksiya lenta" className="relative bottom-[25px] z-10" />
-                      <i className='bx bx-heart text-[24px] relative bottom-[100px] right-[10px] cursor-pointer'></i>
-                    </div>
+                <div key={index} className="card bg-[#Fff] rounded-[5px] h-[416px] w-[292px] pt-[25px] flex flex-col">
+                  <div className="flex items-start">
+                    <Image className="relative bottom-[25px]" src={AksiyaLentaTwo} alt="aksiya lenta"/>
+                    <i className='bx bx-heart cursor-pointer relative text-[24px] left-[130px] bottom-[10px]'></i>
+                  </div>
+                    <Image className="relative left-[20px] bottom-[90px] cursor-pointer hover:scale-[1.1] transition-all duration-200" src={item} alt="krosovka" />
 
-                    <Image className="relative left-[20px] w-[252px] h-auto mt-[-190px]" src={item} alt="krosovka" />
-
-                    <div className="title p-[20px] w-[252px] flex flex-col gap-[14px] pb-[14px]">
+                    <div className="relative bottom-[80px]">
+                      <div className="title p-[20px] w-[230px] flex flex-col gap-[14px] pb-[14px]">
                       <h2 className="text-[20px] font-normal">Бутса Nike Mercurial Superfly 8 FG</h2>
 
                       <div className="flex flex-col">
-                        <h3 className="text-[20px] text-[#FF1313] font-[700]">500 000 uzs</h3>
-                        <small className="text-[16px] line-through text-[#1F1D14] opacity-[0.4]">750 000</small>
+                        <h3 className="text-[20px] text-[#1F1D14] font-[600]">250 000 uzs</h3>
                       </div>
                     </div>
 
-                    <button className="flex items-center gap-[6px] active:bg-[#FBD029] transition-all duration-300 hover:bg-[#fbd129b5] bg-[#FBD029] text-[20px] text-[#1F1D14] rounded-b-[5px] py-[15px] justify-center">
-                      <Image src={Add} alt="add to korzinka" />Корзина
-                    </button>
+                    <button className="flex items-center w-full gap-[6px] active:bg-[#FBD029] transition-all duration-300 hover:bg-[#fbd129b5] bg-[#FBD029] rounded-b-[5px] py-[15px] px-[91px]"><Image src={Add} alt="add to korzinka" />Корзина</button>
+                    </div>
                   </div>
                 ))
               }
@@ -170,7 +168,7 @@ export default function Home() {
                 products.map((item, index) => (
                   <div key={index} className="card bg-[#Fff] rounded-[5px] w-[292px] pt-[25px] flex flex-col">
                     <i className='bx bx-heart cursor-pointer relative text-[24px] left-[254px] bottom-[15px]'></i>
-                    <Image className="relative left-[20px] bottom-[10px]" src={item} alt="krosovka" />
+                    <Image className="relative left-[20px]  cursor-pointer hover:scale-[1.1] transition-all duration-200 bottom-[10px]" src={item} alt="krosovka" />
 
                     <div className="title p-[20px] w-[230px] flex flex-col gap-[14px] pb-[14px]">
                       <h2 className="text-[20px] font-normal">Бутса Nike Mercurial Superfly 8 FG</h2>

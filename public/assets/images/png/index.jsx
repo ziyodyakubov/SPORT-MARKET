@@ -13,5 +13,12 @@ import ProductOne from "./product-1.png"
 import ProductTwo from "./product-2.png"
 import ProductThree from "./product-3.png"
 import Poleznoe from "./poleznoe.png"
+import GantelSingle from "./gantel-single.png"
+import GantelSingleLittle from "./gantel-single-little.png"
+import AksiyaLentaTwo from "./aksiya-lenta-two.png"
+import GantelKorzina from "./gantelkorzina.png"
+import SumkaKorzina from "./sumkakorzina.png"
+import SportivkaKorzina from "./sportivkakorzina.png"
+import QolKorzina from "./qolkorzina.png"
 
-export {KatalogOne,KatalogTwo,KatalogThree,KatalogFour,KatalogFive,KatalogSix,AksiyaButsa,AksiyaGantel,AksiyaSportivka,AksiyaSumka,NoviyKrossovka,ProductOne,ProductTwo,ProductThree,Poleznoe}
+export {KatalogOne,KatalogTwo,KatalogThree,KatalogFour,KatalogFive,KatalogSix,AksiyaButsa,AksiyaGantel,AksiyaSportivka,AksiyaSumka,NoviyKrossovka,ProductOne,ProductTwo,ProductThree,Poleznoe,GantelSingle,GantelSingleLittle,AksiyaLentaTwo,GantelKorzina,SumkaKorzina,SportivkaKorzina,QolKorzina}

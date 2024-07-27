@@ -1,8 +1,16 @@
+'use client';
+import { useRouter } from 'next/navigation';
 import Image from "next/image"
 import {Logo,Katalog,Add} from "@/svg"
 import Link from "next/link"
 
 const Index = () => {
+  const router = useRouter()
+
+  const handleNav = () =>{
+    router.push("/korzina")
+  }
+
   return (
     <header className="flex flex-col">
        <div className="pt-[10px] pb-[13px] bg-[#1F1D14]">
@@ -18,9 +26,9 @@ const Index = () => {
           <ul className="flex items-center gap-[30px]">
             <li><Link href="/product" className="text-[#FFFFFF] font-[400] active:opacity-[0.8] hover:opacity-[1] transition-all duration-200 opacity-[0.8] text-[16px] cursor-pointer">Продукты</Link></li>
             <li className="text-[#FFFFFF] font-[400] active:opacity-[0.8] hover:opacity-[1] transition-all duration-200 opacity-[0.8] text-[16px] cursor-pointer">Контакты</li>
-            <li className="text-[#FFFFFF] font-[400] active:opacity-[0.8] hover:opacity-[1] transition-all duration-200 opacity-[0.8] text-[16px] cursor-pointer">Оплата и Доставка</li>
+            <li><Link href="/payment" className="text-[#FFFFFF] font-[400] active:opacity-[0.8] hover:opacity-[1] transition-all duration-200 opacity-[0.8] text-[16px] cursor-pointer">Оплата и Доставка</Link></li>
             <li className="text-[#FFFFFF] font-[400] active:opacity-[0.8] hover:opacity-[1] transition-all duration-200 opacity-[0.8] text-[16px] cursor-pointer">Новости</li>
-            <li className="text-[#FFFFFF] font-[400] active:opacity-[0.8] hover:opacity-[1] transition-all duration-200 opacity-[0.8] text-[16px] cursor-pointer">О нас</li>
+            <li><Link href="/about" className="text-[#FFFFFF] font-[400] active:opacity-[0.8] hover:opacity-[1] transition-all duration-200 opacity-[0.8] text-[16px] cursor-pointer">О нас</Link></li>
           </ul>
           </div>
           <ul className="right flex items-center gap-[30px]">
@@ -57,9 +65,7 @@ const Index = () => {
                 <i className='bx text-[20px] bx-heart' ></i>
               </div>
 
-              <div className="px-[30px] py-[15px] hover:bg-[#CCCCCC] active:bg-[#F2F2F2] transition-all duration-300  rounded-[5px] bg-[#F2F2F2] cursor-pointer">
-                <button className="flex items-center gap-[10px]"><Image src={Add} alt="korzinka"/>Корзина</button>
-              </div>
+              <button onClick={handleNav} className="px-[30px] py-[15px] hover:bg-[#CCCCCC] active:bg-[#F2F2F2] transition-all duration-300  rounded-[5px] bg-[#F2F2F2] cursor-pointer flex items-center gap-[10px]"><Image src={Add} alt="korzinka"/>Корзина</button>
             </li>
           </ul>
        </div>

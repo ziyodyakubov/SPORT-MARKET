@@ -20,5 +20,10 @@ import UnderArmour from "./under-armour.svg"
 import Reebok from "./reebook.svg"
 import Puma from "./puma.svg"
 import Board from "./board.svg"
+import Control from "./control.svg"
+import Person from "./person.svg"
+import Star from "./star.svg"
+import LineThree from "./three-line.svg"
+import Printer from "./printer.svg"
 
-export {Logo,Katalog,Add,Insta,Telegram,Facebook,Left,Right,AksiyaLenta,NoviyLenta,TopLenta,PrimiOne,PrimiTwo,PrimiThree,PrimiFour,Navigate,Adidas,Nike,UnderArmour,Reebok,Puma,Board}
+export {Logo,Katalog,Add,Insta,Telegram,Facebook,Left,Right,AksiyaLenta,NoviyLenta,TopLenta,PrimiOne,PrimiTwo,PrimiThree,PrimiFour,Navigate,Adidas,Nike,UnderArmour,Reebok,Puma,Board,Control,Person,Star,LineThree,Printer}
