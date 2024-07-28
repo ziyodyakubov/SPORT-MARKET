@@ -11,12 +11,16 @@
   font-family: "Fira Sans", sans-serif;
 }
 
+html,body {
+  @apply overflow-x-hidden;
+}
+
 .container{
   max-width: 1240px !important;
   margin: 0 auto !important;
 }
 
-body{
+html,body{
   overflow-x: hidden !important;
 }
 
@@ -34,7 +38,7 @@ body{
     display: block !important;
   }
 
-  body {
+  html,body {
       overflow-x: hidden !important;
     }
 
