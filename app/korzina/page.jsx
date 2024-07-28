@@ -37,7 +37,7 @@ const page = () => {
                     <div className='flex items-start gap-[22px]'>
                       <Image className='hover:scale-[1.1] mt-[10px] flex justify-center transition-all w-[100px] duration-200 cursor-pointer' src={item.image} alt="image" loading='lazy' />
 
-                      <div className="flex flex-col w-[282px] sm:w-full sm:gap-[10px] gap-[25px]">
+                      <div className="flex flex-col w-[282px] sm:w-full sm:gap-[20px] gap-[25px]">
                         <h2 className='text-[#1F1D14)] text-[20px] sm:text-[11px] font-[400] leading-normal'>{item.name}</h2>
 
                         <div className="flex items-center sm:gap-[10px] gap-[40px]">
