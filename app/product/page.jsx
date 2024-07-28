@@ -7,7 +7,7 @@ import HomePageNavButton from '@/components/UI/HomePageNavButton';
 import Image from 'next/image';
 
 const index = () => {
-    const router = useRouter();
+  const router = useRouter()
 
   const info = [
     { image: AksiyaSportivka },
