@@ -1,6 +1,5 @@
 import Image from "next/image"
 import {Logo,Insta,Telegram,Facebook} from "@/svg"
-import { Fahkwang } from "next/font/google"
 
 const Index = () => {
   return (
