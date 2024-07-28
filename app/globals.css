@@ -17,7 +17,7 @@
 }
 
 body{
-  overflow-x: hidden;
+  overflow-x: hidden !important;
 }
 
 ::placeholder{
@@ -33,4 +33,9 @@ body{
   .bx-menu{
     display: block !important;
   }
+
+  body {
+      overflow-x: hidden !important;
+    }
+
 }
