@@ -5,20 +5,21 @@ import Image from "next/image";
 
 const page = () => {
     const images = [AksiyaButsa, AksiyaGantel, AksiyaSportivka, AksiyaSumka]
+    
     return (
         <div className="bg-[#F2F2F2] pt-[27px] pb-[120px]">
-            <div className="container">
-                <div className="flex items-center gap-[6px] mb-[35px]">
+            <div className="container sm:p-[20px]">
+                <div className="flex items-center sm:gap-[3px] gap-[6px] mb-[35px]">
                     <HomePageNavButton2 />
 
                     <div className="flex items-center gap-[5px]">
                         <i className="bx text-[20px] text-[#000] opacity-[0.6] bx-chevron-right"></i>
-                        <h3 className="cursor-pointer text-[16px]">О нас</h3>
+                        <h3 className="cursor-pointer sm:text-[12px] text-[16px]">О нас</h3>
                     </div>
                 </div>
 
                 <div className="flex items-start gap-[24px]">
-                    <div className="card w-[187px] pt-[15px] pl-[9px] h-[256px] bg-[#fff] rounded-[5px]">
+                    <div className="card sm:hidden w-[187px] pt-[15px] pl-[9px] h-[256px] bg-[#fff] rounded-[5px]">
                         <div className="flex items-center gap-[4px] mb-[12px]">
                             <Image src={LineThree} alt="logo"/>
                             
@@ -28,17 +29,17 @@ const page = () => {
                         <h3 className="text-[16px] relative left-[27px] font-[400]">Вканация</h3>
                     </div>
 
-                    <div className="title w-[704px] h-[677px] pt-[40px] pl-[50px] pr-[66px] bg-[#fff] rounded-[5px]">
-                        <h2 className="text-[24px] font-[500] mb-[17px]">7 SPORT MARKET</h2>
+                    <div className="title w-[704px] sm:pt-[20px] sm:pl-[25px] sm:w-full sm:h-[800px] h-[677px] pt-[40px] pl-[50px] pr-[66px] bg-[#fff] rounded-[5px]">
+                        <h2 className="text-[24px] font-[500] sm:text-[20px] sm:mb-[10px] mb-[17px]">7 SPORT MARKET</h2>
 
-                        <div className="flex flex-col gap-[29px] mb-[42px]">
-                            <p>В составе томатов в большом количестве содержатся сахара, клетчатка, пектины, бета-каротин, витамины В1, В2, В5, В6, В9, С, К, Н и РР, а также нужные организму человека.</p>
+                        <div className="flex flex-col sm:gap-[15px] gap-[29px] mb-[42px]">
+                            <p className="sm:text-[14px]">В составе томатов в большом количестве содержатся сахара, клетчатка, пектины, бета-каротин, витамины В1, В2, В5, В6, В9, С, К, Н и РР, а также нужные организму человека.</p>
 
-                            <p>Овощи содержат в себе много полезных витаминов, которые укрепляют здоровье и иммунитет и являются необходимым компонентом в рационе человека. Тепличный помидор - всегда доступен для вас и в сети супермаркетов “Makro” вы всегда можете найти его по выгодной цене и заказать их с доставкой в Ташкенте.</p>
+                            <p className="sm:text-[14px]">Овощи содержат в себе много полезных витаминов, которые укрепляют здоровье и иммунитет и являются необходимым компонентом в рационе человека. Тепличный помидор - всегда доступен для вас и в сети супермаркетов “Makro” вы всегда можете найти его по выгодной цене и заказать их с доставкой в Ташкенте.</p>
 
-                            <p className="mt-[6px]">В составе томатов в большом количестве содержатся сахара, клетчатка, пектины, бета-каротин, витамины В1, В2, В5, В6, В9, С, К, Н и РР, а также нужные организму человека.</p>
+                            <p className="mt-[6px] sm:text-[14px]">В составе томатов в большом количестве содержатся сахара, клетчатка, пектины, бета-каротин, витамины В1, В2, В5, В6, В9, С, К, Н и РР, а также нужные организму человека.</p>
 
-                            <p>Овощи содержат в себе много полезных витаминов, которые укрепляют здоровье и иммунитет и являются необходимым компонентом в рационе человека. Тепличный помидор - всегда доступен для вас и в сети супермаркетов “Makro” вы всегда можете найти его по выгодной цене и заказать их с доставкой в Ташкенте.</p>
+                            <p className="sm:text-[14px]">Овощи содержат в себе много полезных витаминов, которые укрепляют здоровье и иммунитет и являются необходимым компонентом в рационе человека. Тепличный помидор - всегда доступен для вас и в сети супермаркетов “Makro” вы всегда можете найти его по выгодной цене и заказать их с доставкой в Ташкенте.</p>
                         </div>
                         
 
@@ -57,8 +58,8 @@ const page = () => {
                     </div>
                 </div>
 
-                <h2 className="text-[#1F1D14] text-[24px] font-[500] mb-[40px] mt-[120px]">Акция</h2>
-                <div className="flex items-center justify-between gap-[24px]">
+                <h2 className="text-[#1F1D14] text-[24px] sm:text-[20px] font-[500] mb-[40px] mt-[120px] sm:mt-[60px]">Акция</h2>
+                <div className="flex flex-wrap sm:justify-center sm:gap-[40px] items-center justify-between gap-[24px]">
                     {
                         images.map((item, index) => (
                             <div key={index} className="card bg-[#Fff] rounded-[5px] h-[416px] w-[292px] pt-[25px] flex flex-col">

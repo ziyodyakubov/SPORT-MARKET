@@ -50,36 +50,36 @@ const page = () => {
     const images = [AksiyaButsa, AksiyaGantel, AksiyaSportivka, AksiyaSumka]
     return (
         <div className="bg-[#F2F2F2] pt-[27px] pb-[80px]">
-            <div className="container">
-                <div className="flex items-center gap-[11px] mb-[20px]">
+            <div className="container p-[20px]">
+                <div className="flex items-center sm:gap-[5px] gap-[11px] mb-[20px]">
                     <HomePageNavButton />
 
                     <div className="flex items-center gap-[5px]">
-                        <i className="bx text-[20px] text-[#000] opacity-[0.6] bx-chevron-right"></i>
-                        <h3 className="cursor-pointer text-[16px]">Полезные информации</h3>
+                        <i className="bx text-[20px] text-[#000] sm:text-[14px] opacity-[0.6] bx-chevron-right"></i>
+                        <h3 className="cursor-pointer text-[16px] sm:text-[12px]">Полезные информации</h3>
                     </div>
                 </div>
 
-                <h2 className="text-[32px] text-[#1F1D14] font-[500] mb-[30px]">Полезные информации</h2>
+                <h2 className="text-[32px] sm:text-[20px] sm:mt-[20px] sm:mb-[20px] text-[#1F1D14] font-[500] mb-[30px]">Полезные информации</h2>
 
-                <div className="flex gap-[24px] flex-wrap items-center justify-between mb-[30px]">
+                <div className="flex gap-[24px] sm:justify-center flex-wrap items-center justify-between mb-[30px]">
                     {
                         info.map((item, index) => (
-                            <div key={index} className="card bg-[#Fff] rounded-[8px] w-[608px] pt-[38px] pb-[44px] pl-[35px]">
-                                <h3 className="w-[462px] text-[32px] font-[500] leading-normal text-[#1F1D14] mb-[9px]">{item.title}</h3>
+                            <div key={index} className="card bg-[#Fff] sm:w-full rounded-[8px] sm:pt-[20px] sm:pl-[20px] w-[588px] pt-[38px] pb-[44px] pl-[35px]">
+                                <h3 className="w-[462px] sm:w-[312px] sm:text-[20px] sm:mb-[20px] text-[32px] font-[500] leading-normal text-[#1F1D14] mb-[9px]">{item.title}</h3>
 
-                                <p className="w-[454px] text-[16px] font-[400] mb-[125px] opacity-[0.7]">{item.desc}</p>
+                                <p className="w-[462px] sm:w-[312px] sm:text-[14px] text-[16px] font-[400] mb-[125px] opacity-[0.7]">{item.desc}</p>
 
 
                                 <div className="flex items-center gap-[40px]">
                                     <div className="flex items-center gap-[5px]">
-                                        <i className='bx bx-calendar text-[16px]'></i>
-                                        <h2>{item.data}</h2>
+                                        <i className='bx sm:text-[14px] bx-calendar text-[16px]'></i>
+                                        <h2 className="sm:text-[14px]">{item.data}</h2>
                                     </div>
 
                                     <div className="flex items-center gap-[5px]">
-                                        <i className='bx bx-show-alt text-[16px]' ></i>
-                                        <h2>{item.count}</h2>
+                                        <i className='bx sm:text-[14px] bx-show-alt text-[16px]' ></i>
+                                        <h2 className="sm:text-[14px]">{item.count}</h2>
                                     </div>
                                 </div>
                             </div>
@@ -87,16 +87,16 @@ const page = () => {
                     }
                 </div>
 
-                <button className="border-[1px] mb-[80px] hover:bg-[#FBD029] active:bg-transparent active:text-[#000] transition-all duration-300 hover:text-[#fff] border-[#FBD029] rounded-[5px] py-[15px] px-[40px] text-[20px]">Показать ещё</button>
+                <button className="border-[1px] sm:w-full mb-[80px] hover:bg-[#FBD029] active:bg-transparent active:text-[#000] transition-all duration-300 hover:text-[#fff] border-[#FBD029] rounded-[5px] py-[15px] px-[40px] text-[20px]">Показать ещё</button>
 
-                <h2 className="text-[24px] font-[500] mb-[30px] text-[#1F1D14]">Акция</h2>
+                <h2 className="text-[24px] font-[500] mb-[30px] text-[#1F1D14] sm:text-[30px]">Акция</h2>
 
-                <div className="flex items-center justify-between gap-[24px]">
+                <div className="flex sm:flex-wrap sm:justify-center items-center justify-between gap-[24px]">
                     {
                         images.map((item, index) => (
                             <div key={index} className="card bg-white rounded-[5px] w-[292px] pt-[25px] flex flex-col">
                                 <div className="flex items-center justify-between">
-                                    <Image src={AksiyaLenta} alt="aksiya lenta" className="relative bottom-[25px] z-10" />
+                                    <Image src={AksiyaLenta} alt="aksiya lenta" className="relative rounded-t-[5px] bottom-[25px] z-10" />
                                     <i className='bx bx-heart text-[24px] relative bottom-[100px] right-[10px] cursor-pointer'></i>
                                 </div>
 

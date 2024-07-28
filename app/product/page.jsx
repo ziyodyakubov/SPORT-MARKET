@@ -36,19 +36,19 @@ const index = () => {
   const recomendations = [ProductOne, ProductTwo, ProductThree, ProductOne]
 
   return (
-    <div className="bg-[#F2F2F2] pt-[20px] pb-[208px]">
-      <div className="container">
-        <div className="flex items-center gap-[11px] mb-[20px]">
+    <div className="bg-[#F2F2F2] pt-[20px] sm:t-[10px] sm:pb-[100px] pb-[208px]">
+      <div className="container sm:p-[20px]">
+        <div className="flex items-center sm:gap-[5px] gap-[11px] mb-[20px]">
           <HomePageNavButton/>
 
           <div className="flex items-center gap-[5px]">
-            <i className='bx text-[20px] text-[#000] opacity-[0.6] bx-chevron-right'></i>
-            <h3 className="cursor-pointer text-[16px]">Продукты</h3>
+            <i className='bx text-[20px] sm:text-[14px] text-[#000] opacity-[0.6] bx-chevron-right'></i>
+            <h3 className="cursor-pointer text-[16px] sm:text-[12px]">Продукты</h3>
           </div>
         </div>
 
         <div className="flex items-start justify-between">
-          <div className="left relative bottom-[7px]">
+          <div className="left relative sm:hidden bottom-[7px]">
             <div className="flex relative top-[7px] z-30 flex-col gap-[16px] price-regular pt-[19px] pb-[38px] px-[18px] w-[292px] h-[522px] bg-[#fff] rounded-[8px]">
             <h3 className='text-[16px] font-[400] mb-[4px]'>Филтрь</h3>
 
@@ -114,8 +114,8 @@ const index = () => {
           </div>
 
           <div className='right'>
-            <div className="flex items-center gap-[404px] justify-between mb-[10px]">
-              <div className="flex items-center gap-[25px]">
+            <div className="flex items-center gap-[404px] justify-between sm:mb-[40px] mb-[10px]">
+              <div className="flex items-center gap-[25px] sm:gap-[10px]">
                 <FormControl sx={{ minWidth: 150, background: "#ffff" }} size="small">
                   <InputLabel id="demo-select-small-label">Сортировать</InputLabel>
                   <Select
@@ -142,7 +142,7 @@ const index = () => {
                   </Select>
                 </FormControl>
               </div>
-              <div className="flex items-center gap-[8px]">
+              <div className="flex items-center gap-[8px] sm:hidden">
                 <div className="flex items-center gap-[10px] cursor-pointer py-[7px] px-[15px] bg-[#fff] rounded-[5px]">
                   <h3 className='text-[16px] font-[400]'>Кард</h3>
                   <Image src={Board} alt="card image" />
@@ -155,7 +155,7 @@ const index = () => {
               </div>
             </div>
 
-            <div className="flex w-[924px] flex-wrap items-center justify-between gap-x-[24px] gap-y-[40px] mb-[111px]">
+            <div className="flex w-[924px] sm:w-[350px] flex-wrap sm:justify-center items-center justify-between gap-x-[24px] gap-y-[40px] mb-[111px] sm:mb-[70px]">
               {
                 info.map((item, index) => (
                   <div key={index} onClick={handleNavigate} className="card bg-[#Fff] rounded-[5px] w-[292px] pt-[25px] flex flex-col">
@@ -175,14 +175,14 @@ const index = () => {
                 ))
               }
 
-              <button className='py-[15px] w-[924px] bg-[#fff] rounded-[5px] transition-all duration-200 active:bg-[#fff] hover:bg-[#ffffffa6] text-[20px]'>Показать ещё</button>
+              <button className='py-[15px] sm:w-[300px] sm:text-[16px] w-[924px] bg-[#fff] rounded-[5px] transition-all duration-200 active:bg-[#fff] hover:bg-[#ffffffa6] text-[20px]'>Показать ещё</button>
             </div>
           </div>
         </div>
 
-        <h2 className='text-[32px] font-[500] text-[#1F1D14)] mb-[60px]'>Реконмендуемые продукты</h2>
+        <h2 className='text-[32px] font-[500] text-[#1F1D14)] sm:text-[20px] sm:ml-[25px] sm:mb-[30px] mb-[60px]'>Реконмендуемые продукты</h2>
 
-        <div className="flex items-center justify-between">
+        <div className="flex items-center flex-wrap sm:gap-[20px] sm:justify-center justify-between">
           {
             recomendations.map((item, index) => (
               <div key={index} className="card bg-[#Fff] rounded-[5px] w-[292px] pt-[25px] flex flex-col">

@@ -25,5 +25,7 @@ import Person from "./person.svg"
 import Star from "./star.svg"
 import LineThree from "./three-line.svg"
 import Printer from "./printer.svg"
+import Click from "./click.svg"
+import Payme from "./payme.svg"
 
-export {Logo,Katalog,Add,Insta,Telegram,Facebook,Left,Right,AksiyaLenta,NoviyLenta,TopLenta,PrimiOne,PrimiTwo,PrimiThree,PrimiFour,Navigate,Adidas,Nike,UnderArmour,Reebok,Puma,Board,Control,Person,Star,LineThree,Printer}
+export {Logo,Katalog,Add,Insta,Telegram,Facebook,Left,Right,AksiyaLenta,NoviyLenta,TopLenta,PrimiOne,PrimiTwo,PrimiThree,PrimiFour,Navigate,Adidas,Nike,UnderArmour,Reebok,Puma,Board,Control,Person,Star,LineThree,Printer,Click,Payme}

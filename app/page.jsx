@@ -1,7 +1,6 @@
 import Image from "next/image";
 import { Left, Right, Add, AksiyaLenta, NoviyLenta, TopLenta, PrimiOne, PrimiTwo, PrimiThree, PrimiFour, Navigate, Adidas, Nike, UnderArmour, Reebok, Puma } from "@/svg"
 import { KatalogOne, KatalogTwo, KatalogThree, KatalogFour, KatalogFive, KatalogSix, AksiyaButsa, AksiyaGantel, AksiyaSportivka, AksiyaSumka, NoviyKrossovka, ProductOne, ProductTwo, ProductThree, Poleznoe,AksiyaLentaTwo } from "@/png"
-import { Pagination, Stack } from '@mui/material';
 import NavigateButton from '@/components/UI/NavigateButton';
 
 
@@ -43,13 +42,13 @@ export default function Home() {
 
       {/* SECTION-2 STARTED */}
       <section id="section-2">
-        <div className="container pt-[19px] pb-[24px]">
-          <h2 className="text-[32px] font-[500] mb-[31px]">Каталог</h2>
+        <div className="container pt-[19px] sm:p-[15px] pb-[24px]">
+          <h2 className="text-[32px] sm:ml-[20px] sm:text-[25px] sm:mb-[15px] font-[500] mb-[31px]">Каталог</h2>
 
-          <div className="flex mb-[46px] items-center gap-[24px] justify-between">
+          <div className="flex sm:justify-center sm:gap-[10px] flex-wrap mb-[46px] items-center gap-[24px]">
             {
               katalogs.map((item, index) => (
-                <div key={index} className="pt-[25px] flex flex-col justify-between pl-[20px] pr-[25px] pb-[36px] h-[247px] w-[187px] rounded-[8px] bg-opacity-75" style={{ background: item.bg }}>
+                <div key={index} className="pt-[25px] flex flex-col justify-between pl-[20px] pr-[25px] pb-[36px] h-[247px] sm:w-[153px] sm:h-[220px] w-[186px] rounded-[8px] bg-opacity-75" style={{ background: item.bg }}>
                   <h2>{item.title}</h2>
 
                   <Image src={item.image} alt='katalog image' />
@@ -57,9 +56,6 @@ export default function Home() {
               ))
             }
           </div>
-          <Stack spacing={2} className="flex justify-center items-center text-center">
-            <Pagination count={5} />
-          </Stack>
         </div>
       </section>
       {/* SECTION-2 ENDED */}
@@ -67,23 +63,23 @@ export default function Home() {
       {/* BG WRAPPER STARTED */}
       <div className="wrapper bg-[#F2F2F2]">
         {/* SECTION-3 STARTED */}
-        <section id="section-3" className="pt-[70px] pb-[76px]">
+        <section id="section-3" className="pt-[70px] pb-[76px] sm:pt-[30px] sm:pb-[70px]">
           <div className="container">
-            <div className="flex justify-between mb-[42px]">
-              <h2 className="text-[32px] font-[500]">Акция</h2>
+            <div className="flex sm:p-[20px] justify-between sm:mb-[15px] mb-[42px]">
+              <h2 className="text-[32px] sm:ml-[20px] sm:text-[25px] font-[500]">Акция</h2>
 
-              <div className="flex items-center gap-[25px]">
-                <Image className="cursor-pointer" src={Left} alt="left" />
-                <Image className="cursor-pointer" src={Right} alt="right" />
+              <div className="flex items-center gap-[25px] sm:gap-[15px] sm:mr-[20px]">
+                <Image className="cursor-pointer sm:w-[40px]" src={Left} alt="left" />
+                <Image className="cursor-pointer sm:w-[40px]" src={Right} alt="right" />
               </div>
             </div>
 
-            <div className="flex items-center justify-between gap-[24px]">
+            <div className="flex flex-wrap sm:justify-center sm:gap-[40px] items-center justify-between gap-[24px]">
               {
                 images.map((item, index) => (
                 <div key={index} className="card bg-[#Fff] rounded-[5px] h-[416px] w-[292px] pt-[25px] flex flex-col">
                   <div className="flex items-start">
-                    <Image className="relative bottom-[25px]" src={AksiyaLentaTwo} alt="aksiya lenta"/>
+                    <Image className="relative bottom-[25px] rounded-t-[5px]" src={AksiyaLentaTwo} alt="aksiya lenta"/>
                     <i className='bx bx-heart cursor-pointer relative text-[24px] left-[130px] bottom-[10px]'></i>
                   </div>
                     <Image className="relative left-[20px] bottom-[90px] cursor-pointer hover:scale-[1.1] transition-all duration-200" src={item} alt="krosovka" />
@@ -109,18 +105,18 @@ export default function Home() {
         {/* SECTION-3 ENDED */}
 
         {/* SECTION-4 STARTED */}
-        <section id="section-4" className="pb-[86px]">
+        <section id="section-4" className="pb-[86px] sm:pb-[70px]">
           <div className="container">
-            <div className="flex justify-between mb-[36px]">
-              <h2 className="text-[32px] font-[500]">Новинки</h2>
+            <div className="flex sm:p-[20px] justify-between sm:mb-[15px] mb-[36px]">
+              <h2 className="text-[32px] sm:ml-[20px] sm:text-[25px] font-[500]">Новинки</h2>
 
-              <div className="flex items-center gap-[25px]">
-                <Image className="cursor-pointer" src={Left} alt="left" />
-                <Image className="cursor-pointer" src={Right} alt="right" />
+              <div className="flex items-center gap-[25px] sm:gap-[15px] sm:mr-[20px]">
+                <Image className="cursor-pointer sm:w-[40px]" src={Left} alt="left" />
+                <Image className="cursor-pointer sm:w-[40px]" src={Right} alt="right" />
               </div>
             </div>
 
-            <div className="flex items-center justify-between gap-[24px]">
+            <div className="flex flex-wrap sm:justify-center items-center justify-between gap-[24px]">
               {
                 novies.map((item, index) => (
                   <div key={index} className="card bg-white rounded-[5px] w-[292px] pt-[25px] flex flex-col">
@@ -152,18 +148,18 @@ export default function Home() {
         {/* SECTION-4 ENDED */}
 
         {/* SECTION-5 STARTED */}
-        <section id="section-5" className="pb-[86px]">
+        <section id="section-5" className="pb-[86px] sm:pb-[70px]">
           <div className="container">
-            <div className="flex justify-between mb-[36px]">
-              <h2 className="text-[32px] font-[500]">Продукты</h2>
+            <div className="flex justify-between sm:p-[20px] sm:mb-[15px] mb-[36px]">
+              <h2 className="text-[32px] sm:text-[25px] ml-[20px] font-[500]">Продукты</h2>
 
-              <div className="flex items-center gap-[25px]">
-                <Image className="cursor-pointer" src={Left} alt="left" />
-                <Image className="cursor-pointer" src={Right} alt="right" />
+              <div className="flex items-center gap-[25px] sm:gap-[15px] sm:mr-[20px]">
+                <Image className="cursor-pointer sm:w-[40px]" src={Left} alt="left" />
+                <Image className="cursor-pointer sm:w-[40px]" src={Right} alt="right" />
               </div>
             </div>
 
-            <div className="flex items-center justify-between gap-[24px]">
+            <div className="flex flex-wrap sm:justify-center items-center justify-between gap-[24px]">
               {
                 products.map((item, index) => (
                   <div key={index} className="card bg-[#Fff] rounded-[5px] w-[292px] pt-[25px] flex flex-col">
@@ -191,16 +187,16 @@ export default function Home() {
         {/* SECTION-6 STARTED */}
         <section id="section-6" className="pb-[70px]">
           <div className="container">
-            <div className="flex justify-between mb-[36px]">
-              <h2 className="text-[32px] font-[500]">ТОП продажа</h2>
+            <div className="flex sm:p-[20px] justify-between mb-[36px]">
+              <h2 className="text-[32px] sm:text-[25px] sm:ml-[20px] font-[500]">ТОП продажа</h2>
 
-              <div className="flex items-center gap-[25px]">
-                <Image className="cursor-pointer" src={Left} alt="left" />
-                <Image className="cursor-pointer" src={Right} alt="right" />
+              <div className="flex items-center gap-[25px] sm:gap-[15px] sm:mr-[20px]">
+                <Image className="cursor-pointer sm:w-[40px]" src={Left} alt="left" />
+                <Image className="cursor-pointer sm:w-[40px]" src={Right} alt="right" />
               </div>
             </div>
 
-            <div className="flex items-center justify-between gap-[24px]">
+            <div className="flex sm:justify-center flex-wrap items-center justify-between gap-[24px]">
               {
                 top.map((item, index) => (
                   <div key={index} className="card bg-white rounded-[5px] w-[292px] pt-[25px] flex flex-col">
@@ -232,32 +228,32 @@ export default function Home() {
         {/* SECTION-6 ENDED */}
 
         {/* SECTION-7 STARTED */}
-        <section id="section-7" className="pb-[80px]">
-          <div className="container">
-            <h2 className="text-[32px] font-[500] mb-[31px]">Полезное</h2>
+        <section id="section-7" className="pb-[80px] sm:pb-[50px]">
+          <div className="container sm:p-[20px]">
+            <h2 className="text-[32px] font-[500] mb-[31px] sm:text-[25px] sm:mb-[15px] sm:ml-[10px]">Полезное</h2>
 
-            <div className="flex items-center justify-between">
-              <div className="card bg-[#Fff] rounded-[8px] w-[608px] pt-[38px] pb-[44px] pl-[35px]">
-                <h3 className="w-[462px] text-[32px] font-[500] leading-normal text-[#1F1D14] mb-[9px]">Как правильно выбрать эллиптический тренажер?</h3>
+            <div className="flex items-center sm:flex-col sm:gap-[10px] justify-between">
+              <div className="card bg-[#Fff] rounded-[8px] sm:w-[340px] w-[608px] sm:pt-[18px] sm:pb-[24px] sm:pl-[20px] pt-[38px] pb-[44px] pl-[35px]">
+                <h3 className="w-[462px] text-[32px] font-[500] sm:mb-[15px] sm:text-[17px] sm:w-[220px] leading-normal text-[#1F1D14] mb-[9px]">Как правильно выбрать эллиптический тренажер?</h3>
 
-                <p className="w-[454px] text-[16px] font-[400] mb-[125px] opacity-[0.7]">Эллиптические тренажёры популярны среди людей любого возраста и с разным уровнем физической подготовкb Эллиптические тренажёры популярны среди людей любого возраста и с разным уровнем физической подготовки...</p>
+                <p className="w-[454px] sm:text-[12px] sm:w-[320px] text-[16px] font-[400] mb-[125px] opacity-[0.7]">Эллиптические тренажёры популярны среди людей любого возраста и с разным уровнем физической подготовкb Эллиптические тренажёры популярны среди людей любого возраста и с разным уровнем физической подготовки...</p>
 
 
                 <div className="flex items-center gap-[40px]">
                   <div className="flex items-center gap-[5px]">
-                    <i className='bx bx-calendar text-[16px]'></i>
-                    <h2>27.01.2022</h2>
+                    <i className='bx bx-calendar sm:text-[12px] text-[16px]'></i>
+                    <h2 className="sm:text-[12px]">27.01.2022</h2>
                   </div>
 
                   <div className="flex items-center gap-[5px]">
-                    <i className='bx bx-show-alt text-[16px]' ></i>
-                    <h2>250</h2>
+                    <i className='bx bx-show-alt text-[16px] sm:text-[12px]' ></i>
+                    <h2 className="sm:text-[12px]">250</h2>
                   </div>
                 </div>
               </div>
 
-              <div className="flex flex-col gap-[15px]">
-                <div className="card py-[18px] w-[608px] h-[385px] px-[145px] bg-[#fff] rounded-[8px]">
+              <div className="flex sm:items-center flex-col gap-[15px]">
+                <div className="card sm:hidden py-[18px] w-[608px] sm:py-[18px] sm:px-[145px] h-[385px] px-[145px] bg-[#fff] rounded-[8px]">
                   <Image src={Poleznoe} alt="poleznoe" />
                 </div>
 
@@ -271,10 +267,10 @@ export default function Home() {
 
         {/* SECTION-8 STARTED */}
         <section id="section-8" className="pb-[80px]">
-          <div className="container">
-            <h2 className="text-[32px] font-[500] mb-[30px]">Примущества</h2>
+          <div className="container sm:p-[20px]">
+            <h2 className="text-[32px] font-[500] sm:text-[25px] sm:ml-[10px] mb-[30px]">Примущества</h2>
 
-            <div className="flex items-center gap-[24px] justify-between">
+            <div className="flex flex-wrap sm:justify-center sm:gap-[15px] items-center gap-[24px] justify-between">
               {
                 primi.map((item, index) => (
                   <div key={index} className="flex flex-col gap-[24px] pt-[60px] pl-[40px] pr-[30px] bg-[#fff] rounded-[8px] h-[289px] w-[292px]">
@@ -290,13 +286,13 @@ export default function Home() {
         {/* SECTION-8 ENDED */}
 
         {/* SECTION-9 STARTED */}
-        <section id="section-9" className="pb-[81px]">
-          <div className="container">
-            <h2 className="text-[32px] font-[500] mb-[30px]">О нас</h2>
+        <section id="section-9" className="pb-[81px] sm:pb-[20px]">
+          <div className="container sm:p-[20px]">
+            <h2 className="text-[32px] font-[500] sm:text-[25px] sm:ml-[10px] mb-[30px]">О нас</h2>
 
-            <div className="card h-[400px] pt-[70px] pl-[80px] pb-[101px] bg-[#1F1D14] rounded-[8px]">
-              <p className="text-[20px] text-[#fff] w-[719px] opacity-[0.8] font-[400]">Интернет магазин спортивных товаров <small className="font-[500] text-[21px]  opacity-[100] underline">7MARKETSPORT.UZ</small> предлагает широкий ассортимент продукции с доставкой по Ташкенту, области и другим регионам Узбекистана. Ведется работа как с розничными покупателями, так и с оптовыми клиентами. Разнообразие форм оплаты заметно упрощает процесс приобретения товара. Действует гибкая система скидок. Разнообразие форм оплаты заметно упрощает процесс приобретения товара. Действует гибкая система скидок. </p>
-              <Image className="cursor-pointer relative left-[1000px] top-[40px]" src={Navigate} alt="navigate" />
+            <div className="card h-[400px] sm:pt-[40px] sm:pl-[40px] sm:pb-[30px] sm:h-[740px] pt-[70px] pl-[80px] pb-[101px] bg-[#1F1D14] rounded-[8px]">
+              <p className="text-[20px] text-[#fff] sm:w-[300px] w-[719px] opacity-[0.8] font-[400]">Интернет магазин спортивных товаров <small className="font-[500] text-[21px]  opacity-[100] underline">7MARKETSPORT.UZ</small> предлагает широкий ассортимент продукции с доставкой по Ташкенту, области и другим регионам Узбекистана. Ведется работа как с розничными покупателями, так и с оптовыми клиентами. Разнообразие форм оплаты заметно упрощает процесс приобретения товара. Действует гибкая система скидок. Разнообразие форм оплаты заметно упрощает процесс приобретения товара. Действует гибкая система скидок. </p>
+              <Image className="cursor-pointer sm:left-[220px] sm:top-[60px] sm:w-[50px] relative left-[1000px] top-[40px]" src={Navigate} alt="navigate" />
             </div>
           </div>
         </section>
