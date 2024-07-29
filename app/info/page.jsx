@@ -1,6 +1,6 @@
 import HomePageNavButton from "@/components/UI/HomePageNavButton";
-import { AksiyaButsa,AksiyaGantel,AksiyaSportivka,AksiyaSumka } from "@/png";
-import { AksiyaLenta,Add } from "@/svg";
+import { AksiyaButsa,AksiyaGantel,AksiyaSportivka,AksiyaSumka } from "@/public/assets/images/png";
+import { AksiyaLenta,Add } from "@/public/assets/images/svg";
 import Image from "next/image";
 
 const page = () => {

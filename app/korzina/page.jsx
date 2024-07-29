@@ -1,7 +1,7 @@
 import HomePageNavButton from '@/components/UI/HomePageNavButton';
 import Image from 'next/image';
-import { GantelKorzina, SumkaKorzina, SportivkaKorzina, QolKorzina } from '@/png';
-import { Click,Payme } from '@/svg';
+import { GantelKorzina, SumkaKorzina, SportivkaKorzina, QolKorzina } from '@/public/assets/images/png';
+import { Click,Payme } from '@/public/assets/images/svg';
 
 const page = () => {
   const info = [

@@ -2,7 +2,7 @@
 import { useState } from 'react';
 import { useRouter } from 'next/navigation';
 import Image from "next/image";
-import { Logo, Katalog, Add } from "@/svg";
+import { Logo, Katalog, Add } from "@/public/assets/images/svg";
 import Link from "next/link";
 
 const Index = () => {

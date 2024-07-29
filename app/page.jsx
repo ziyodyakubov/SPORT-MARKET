@@ -1,6 +1,6 @@
 import Image from "next/image";
-import { Left, Right, Add, AksiyaLenta, NoviyLenta, TopLenta, PrimiOne, PrimiTwo, PrimiThree, PrimiFour, Navigate, Adidas, Nike, UnderArmour, Reebok, Puma } from "@/svg"
-import { KatalogOne, KatalogTwo, KatalogThree, KatalogFour, KatalogFive, KatalogSix, AksiyaButsa, AksiyaGantel, AksiyaSportivka, AksiyaSumka, NoviyKrossovka, ProductOne, ProductTwo, ProductThree, Poleznoe,AksiyaLentaTwo } from "@/png"
+import { Left, Right, Add, AksiyaLenta, NoviyLenta, TopLenta, PrimiOne, PrimiTwo, PrimiThree, PrimiFour, Navigate, Adidas, Nike, UnderArmour, Reebok, Puma } from "@/public/assets/images/svg"
+import { KatalogOne, KatalogTwo, KatalogThree, KatalogFour, KatalogFive, KatalogSix, AksiyaButsa, AksiyaGantel, AksiyaSportivka, AksiyaSumka, NoviyKrossovka, ProductOne, ProductTwo, ProductThree, Poleznoe,AksiyaLentaTwo } from "@/public/assets/images/png"
 import NavigateButton from '@/components/UI/NavigateButton';
 
 
@@ -286,7 +286,7 @@ export default function Home() {
         {/* SECTION-8 ENDED */}
 
         {/* SECTION-9 STARTED */}
-        <section id="section-9" className="pb-[81px] sm:pb-[20px]">
+        <section id="section-9" className="pb-[81px] sm:pb-[]">
           <div className="container sm:p-[20px]">
             <h2 className="text-[32px] font-[500] sm:text-[25px] sm:ml-[10px] mb-[30px]">О нас</h2>
 

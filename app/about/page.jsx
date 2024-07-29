@@ -1,5 +1,5 @@
-import { Add,LineThree,Printer } from "@/svg"
-import { AksiyaSportivka, AksiyaGantel, AksiyaButsa,AksiyaSumka, AksiyaLentaTwo } from "@/png"
+import { Add,LineThree,Printer } from "@/public/assets/images/svg"
+import { AksiyaSportivka, AksiyaGantel, AksiyaButsa,AksiyaSumka, AksiyaLentaTwo } from "@/public/assets/images/png"
 import HomePageNavButton2 from '@/components/UI/HomePageNavButton2';
 import Image from "next/image";
 

@@ -1,5 +1,5 @@
 import Image from "next/image"
-import {Logo,Insta,Telegram,Facebook} from "@/svg"
+import {Logo,Insta,Telegram,Facebook} from "@/public/assets/images/svg"
 
 const Index = () => {
   return (

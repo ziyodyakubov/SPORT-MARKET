@@ -1,7 +1,7 @@
 import HomePageNavButton from "@/components/UI/HomePageNavButton2";
 import { InputLabel, MenuItem, FormControl, Select } from '@mui/material';
-import { GantelSingle, GantelSingleLittle,ProductOne,ProductTwo,ProductThree } from "@/png"
-import { Add, Control, Person, Star } from "@/svg"
+import { GantelSingle, GantelSingleLittle,ProductOne,ProductTwo,ProductThree } from "@/public/assets/images/png"
+import { Add, Control, Person, Star } from "@/public/assets/images/svg"
 import Image from "next/image";
 
 const page = () => {

@@ -27,5 +27,6 @@ import LineThree from "./three-line.svg"
 import Printer from "./printer.svg"
 import Click from "./click.svg"
 import Payme from "./payme.svg"
+import Favicon from "./favicon.svg"
 
-export {Logo,Katalog,Add,Insta,Telegram,Facebook,Left,Right,AksiyaLenta,NoviyLenta,TopLenta,PrimiOne,PrimiTwo,PrimiThree,PrimiFour,Navigate,Adidas,Nike,UnderArmour,Reebok,Puma,Board,Control,Person,Star,LineThree,Printer,Click,Payme}
+export {Logo,Katalog,Add,Insta,Telegram,Facebook,Left,Right,AksiyaLenta,NoviyLenta,TopLenta,PrimiOne,PrimiTwo,PrimiThree,PrimiFour,Navigate,Adidas,Nike,UnderArmour,Reebok,Puma,Board,Control,Person,Star,LineThree,Printer,Click,Payme,Favicon}

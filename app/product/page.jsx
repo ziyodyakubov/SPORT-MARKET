@@ -1,8 +1,8 @@
 'use client';
 import { useRouter } from 'next/navigation';
 import { InputLabel, MenuItem, FormControl, Select } from '@mui/material';
-import { Board, AksiyaLenta, NoviyLenta, TopLenta, Add } from "@/svg";
-import { AksiyaSportivka, AksiyaGantel, ProductThree, AksiyaButsa, ProductOne, ProductTwo } from "@/png";
+import { Board, AksiyaLenta, NoviyLenta, TopLenta, Add } from "@/public/assets/images/svg";
+import { AksiyaSportivka, AksiyaGantel, ProductThree, AksiyaButsa, ProductOne, ProductTwo } from "@/public/assets/images/png";
 import HomePageNavButton from '@/components/UI/HomePageNavButton';
 import Image from 'next/image';
 
