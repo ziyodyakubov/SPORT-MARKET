@@ -84,7 +84,7 @@ const Index = () => {
         </div>
       </header>
 
-      <div className={`pb-[13px] pt-[20px] rounded-[5px] w-[200px] bg-[#1F1D14] flex-col ${navVisible ? 'flex' : 'hidden'} sm:absolute top-[90px] right-[5px] items-center gap-[30px]`}>
+      <div className={`pb-[13px] pt-[20px] rounded-[5px] z-20 w-[200px] bg-[#1F1D14] flex-col ${navVisible ? 'flex' : 'hidden'} sm:absolute top-[90px] right-[5px] items-center gap-[30px]`}>
         <div><Link href="/product" className="text-[#FFFFFF] font-[400] active:opacity-[0.8] hover:opacity-[1] transition-all duration-200 opacity-[0.8] text-[16px] cursor-pointer">Продукты</Link></div>
         <div className="text-[#FFFFFF] font-[400] active:opacity-[0.8] hover:opacity-[1] transition-all duration-200 opacity-[0.8] text-[16px] cursor-pointer">Контакты</div>
         <div><Link href="/payment" className="text-[#FFFFFF] font-[400] active:opacity-[0.8] hover:opacity-[1] transition-all duration-200 opacity-[0.8] text-[16px] cursor-pointer">Оплата и Доставка</Link></div>
