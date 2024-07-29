@@ -24,7 +24,7 @@ const page = () => {
 
         <div className="flex sm:flex-col items-start gap-[24px]">
           <div className="card pt-[20px] pl-[32px] sm:pt-[10px] sm:pl-[20px] sm:w-full sm:h-[640px] w-[713px] h-[893px] bg-[#fff] rounded-[5px] pr-[26px] pb-[65px]">
-            <div className="flex items-center sm:justify-normal gap-[100px] justify-between mb-[15px]">
+            <div className="flex items-center sm:justify-normal gap-[130px] justify-between mb-[15px]">
               <h3 className='text-[24px] sm:text-[16px] font-[500]'>Ваша корзина</h3>
 
               <p className='cursor-pointer text-[10px] text-[#FF1313] font-[400]'>Очистить все</p>
