@@ -3,7 +3,7 @@ import {Logo,Insta,Telegram,Facebook} from "@/public/assets/images/svg"
 
 const Index = () => {
   return (
-    <footer>
+    <footer id="footer">
       <div className="bg-[#FBD029] w-full h-[24px]"></div>
       <div className="bg-[#1F1D14] sm:pt-[20px] pt-[72px] border-b-[1px] border-b-[#f2f2f244]">
         <div className="container sm:p-[20px]">

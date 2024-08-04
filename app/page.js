@@ -4,6 +4,7 @@ import { KatalogOne, KatalogTwo, KatalogThree, KatalogFour, KatalogFive, Katalog
 import NavigateButton from '@/components/UI/NavigateButton';
 
 
+
 export default function Home() {
 
   const katalogs = [
@@ -32,6 +33,7 @@ export default function Home() {
 
   return (
     <>
+    
       {/* SECTION-1 STARTED */}
           <section id="section-1">
             <div className="container">
@@ -105,7 +107,7 @@ export default function Home() {
         {/* SECTION-3 ENDED */}
 
         {/* SECTION-4 STARTED */}
-        <section id="section-4" className="pb-[86px] sm:pb-[70px]">
+        <section id="news" className="pb-[86px] sm:pb-[70px]">
           <div className="container">
             <div className="flex sm:p-[20px] justify-between sm:mb-[15px] mb-[36px]">
               <h2 className="text-[32px] sm:ml-[20px] sm:text-[25px] font-[500]">Новинки</h2>

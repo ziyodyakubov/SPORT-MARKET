@@ -4,10 +4,16 @@ import { useRouter } from 'next/navigation';
 import Image from "next/image";
 import { Logo, Katalog, Add } from "@/public/assets/images/svg";
 import Link from "next/link";
+import { Button } from '@mui/material';
+import CustomModal from './modal/index';
 
-const Index = () => {
+const Index = ({ favoriteCount }) => {
   const router = useRouter();
   const [navVisible, setNavVisible] = useState(false);
+  const [open, setOpen] = useState(false);
+
+  const handleOpen = () => setOpen(true);
+  const handleClose = () => setOpen(false);
 
   const handleNav = () => {
     router.push("/korzina");
@@ -19,6 +25,7 @@ const Index = () => {
 
   return (
     <>
+     <CustomModal open={open} handleClose={handleClose} title="Example Modal"></CustomModal>
       <header className="flex flex-col">
         <div className="pt-[10px] sm:p-[15px] pb-[13px] bg-[#1F1D14]">
           <nav className="container flex items-center justify-between">
@@ -33,9 +40,9 @@ const Index = () => {
               <i onClick={responsiveNav} className='bx bx-menu sm:text-[30px] sm:block sm:text-[#fff] cursor-pointer'></i>
               <ul className="flex sm:hidden items-center gap-[30px]">
                 <li><Link href="/product" className="text-[#FFFFFF] font-[400] active:opacity-[0.8] hover:opacity-[1] transition-all duration-200 opacity-[0.8] text-[16px] cursor-pointer">Продукты</Link></li>
-                <li className="text-[#FFFFFF] font-[400] active:opacity-[0.8] hover:opacity-[1] transition-all duration-200 opacity-[0.8] text-[16px] cursor-pointer">Контакты</li>
+                <li><Link href="#footer" className="text-[#FFFFFF] font-[400] active:opacity-[0.8] hover:opacity-[1] transition-all duration-200 opacity-[0.8] text-[16px] cursor-pointer">Контакты</Link></li>
                 <li><Link href="/payment" className="text-[#FFFFFF] font-[400] active:opacity-[0.8] hover:opacity-[1] transition-all duration-200 opacity-[0.8] text-[16px] cursor-pointer">Оплата и Доставка</Link></li>
-                <li className="text-[#FFFFFF] font-[400] active:opacity-[0.8] hover:opacity-[1] transition-all duration-200 opacity-[0.8] text-[16px] cursor-pointer">Новости</li>
+                <li><Link href="#news" className="text-[#FFFFFF] font-[400] active:opacity-[0.8] hover:opacity-[1] transition-all duration-200 opacity-[0.8] text-[16px] cursor-pointer">Новости</Link></li>
                 <li><Link href="/about" className="text-[#FFFFFF] font-[400] active:opacity-[0.8] hover:opacity-[1] transition-all duration-200 opacity-[0.8] text-[16px] cursor-pointer">О нас</Link></li>
               </ul>
             </div>
@@ -67,7 +74,7 @@ const Index = () => {
               </div>
             </li>
             <li className="flex items-center sm:gap-[7px] gap-[13px]">
-              <div className="p-[13px] sm:p-[8px] hover:bg-[#CCCCCC] active:bg-[#F2F2F2] transition-all duration-300 bg-[#F2F2F2] rounded-[3px] cursor-pointer">
+              <div onClick={handleOpen} className="p-[13px] sm:p-[8px] hover:bg-[#CCCCCC] active:bg-[#F2F2F2] transition-all duration-300 bg-[#F2F2F2] rounded-[3px] cursor-pointer">
                 <i className='text-[20px] sm:text-[16px] bx bx-user'></i>
               </div>
               <div className="p-[13px] sm:p-[8px] hover:bg-[#CCCCCC] active:bg-[#F2F2F2] transition-all duration-300 bg-[#F2F2F2] rounded-[3px] cursor-pointer">
