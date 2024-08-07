@@ -9,7 +9,7 @@ import HomePageNavButton from '@/components/UI/HomePageNavButton';
 import Image from 'next/image';
 import { useEffect, useState } from 'react';
 import { get } from '@/service/product.service';
-import { like } from '@/service/wishlist.service';
+import { like,unlike} from '@/service/wishlist.service';
 import { add } from "@/service/basket.service"
 import Notification from '@/utils/notification';
 import { ToastContainer } from 'react-toastify';
@@ -66,58 +66,64 @@ const HomePage = () => {
 
 
   const toggleFavorite = async (index, id) => {
-    const isFavorite = favorites[index];
-    let response;
+  const isFavorite = favorites[index];
+  let response;
 
-    try {
-      setFavorites((prevFavorites) => {
-        const newFavorites = {
-          ...prevFavorites,
-          [index]: !isFavorite,
-        };
-        const newFavoriteCount = Object.values(newFavorites).filter(Boolean).length;
-        setFavoriteCount(newFavoriteCount);
-        return newFavorites;
-      });
+  try {
+    setFavorites((prevFavorites) => {
+      const newFavorites = {
+        ...prevFavorites,
+        [index]: !isFavorite,
+      };
+      const newFavoriteCount = Object.values(newFavorites).filter(Boolean).length;
+      setFavoriteCount(newFavoriteCount);
+      return newFavorites;
+    });
 
-      if (isFavorite) {
-        response = await unlike(id);
-        if (response) {
-          console.log(response)
-          Notification({
-            title: "Removed from wishlist",
-            type: "success",
-          });
-        }
+    if (isFavorite) {
+      response = await unlike(id);
+      console.log("Unlike response:", response);
+      if (response.status === 200 || response.status === 201) {
+        Notification({
+          title: "Removed from wishlist",
+          type: "success",
+        });
       } else {
-        response = await like(id);
-        if (response.status === 200 || response.status === 204) {
-          Notification({
-            title: "Added to wishlist",
-            type: "success",
-          });
-        } else {
-          throw new Error("Failed to add to wishlist");
-        }
+        throw new Error("Failed to remove from wishlist");
       }
-
-    } catch (error) {
-      setFavorites((prevFavorites) => {
-        const newFavorites = {
-          ...prevFavorites,
-          [index]: isFavorite,
-        };
-        const newFavoriteCount = Object.values(newFavorites).filter(Boolean).length;
-        setFavoriteCount(newFavoriteCount);
-        return newFavorites;
-      });
-
-      Notification({
-        title: error.message,
-        type: "error",
-      });
+    } else {
+      response = await like(id);
+      console.log("Like response:", response);
+      if (response.status === 200 || response.status === 201) {
+        Notification({
+          title: "Added to wishlist",
+          type: "success",
+        });
+      } else {
+        throw new Error("Failed to add to wishlist");
+      }
     }
-  };
+
+  } catch (error) {
+    console.error("Error in toggleFavorite:", error);
+
+    setFavorites((prevFavorites) => {
+      const newFavorites = {
+        ...prevFavorites,
+        [index]: isFavorite,
+      };
+      const newFavoriteCount = Object.values(newFavorites).filter(Boolean).length;
+      setFavoriteCount(newFavoriteCount);
+      return newFavorites;
+    });
+
+    Notification({
+      title: error.message || "Failed to update wishlist",
+      type: "error",
+    });
+  }
+};
+
 
 
 
