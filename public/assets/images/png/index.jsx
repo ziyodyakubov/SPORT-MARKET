@@ -20,5 +20,8 @@ import GantelKorzina from "./gantelkorzina.png"
 import SumkaKorzina from "./sumkakorzina.png"
 import SportivkaKorzina from "./sportivkakorzina.png"
 import QolKorzina from "./qolkorzina.png"
+import Bag from "./bag.png"
+import Boots from "./boots.png"
+import Gantels from "./gantels.png"
 
-export {KatalogOne,KatalogTwo,KatalogThree,KatalogFour,KatalogFive,KatalogSix,AksiyaButsa,AksiyaGantel,AksiyaSportivka,AksiyaSumka,NoviyKrossovka,ProductOne,ProductTwo,ProductThree,Poleznoe,GantelSingle,GantelSingleLittle,AksiyaLentaTwo,GantelKorzina,SumkaKorzina,SportivkaKorzina,QolKorzina}
+export {KatalogOne,KatalogTwo,KatalogThree,KatalogFour,KatalogFive,KatalogSix,AksiyaButsa,AksiyaGantel,AksiyaSportivka,AksiyaSumka,NoviyKrossovka,ProductOne,ProductTwo,ProductThree,Poleznoe,GantelSingle,GantelSingleLittle,AksiyaLentaTwo,GantelKorzina,SumkaKorzina,SportivkaKorzina,QolKorzina,Bag,Boots,Gantels}

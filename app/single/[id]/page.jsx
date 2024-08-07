@@ -1,3 +1,5 @@
+"use client";
+
 import HomePageNavButton from "@/components/UI/HomePageNavButton2";
 import { InputLabel, MenuItem, FormControl, Select } from '@mui/material';
 import { GantelSingle, GantelSingleLittle, ProductOne, ProductTwo, ProductThree } from "@/public/assets/images/png";
@@ -7,6 +9,7 @@ import Image from "next/image";
 const Page = () => {
     const array = [1, 2, 3, 4, 5];
     const recommendations = [ProductOne, ProductTwo, ProductThree, ProductOne];
+    
 
     return (
         <div className="bg-[#F2F2F2] pt-[27px] pb-[80px]">
@@ -47,35 +50,35 @@ const Page = () => {
                         </div>
                     </div>
 
-                    <div className="title sm:pt-[30px] sm:pl-[20px] pt-[50px] bg-[#FFF] sm:w-full rounded-[5px] sm:h-[490px] w-[503px] h-[539px] pl-[52px] pr-[80px] pb-[34px]">
-                        <h2 className="text-[32px] mb-[16px] text-[#1F1D14] sm:text-[20px] sm:mb-[5px] w-[307px] font-[500] leading-[34px]">Гантель виниловая, 2 х 3 кг</h2>
-                        <p className="mb-[20px] sm:text-[14px] sm:mb-[10px]">В составе томатов в большом количестве содержатся сахара, клетчатка, пектины, бета-каротин, витамины.</p>
-                        <div className="flex items-center gap-[10px] mb-[15px]">
-                            <h2 className="text-[16px] font-[400] sm:text-[14px] text-[#1F1D14]">В комлекте:</h2>
-                            <h2 className="text-[20px] sm:text-[16px] text-[#1F1D14] font-[500]">2 шт.</h2>
-                        </div>
-                        <div className="flex items-center gap-[10px] mb-[26px]">
-                            <h2 className="text-[16px] sm:text-[14px] font-[400] text-[#1F1D14]">Страна производства:</h2>
-                            <h2 className="text-[20px] sm:text-[16px] text-[#1F1D14] font-[500]">Китай</h2>
-                        </div>
-                        <div className="flex items-center mb-[25px]">
-                            <h2 className="text-[#1F1D14] sm:text-[20px] text-[24px] font-[500]">220 000</h2>
-                            <h3 className="text-[#1F1D14] opacity-[0.8] text-[20px] font-[400] sm:text-[16px] sm:bottom-[10px] relative ml-[5px] mr-[8.5px] top-[5px]">uzs</h3>
-                            <h3>|</h3>
-                            <h3 className="text-[#1F1D14] sm:text-[16px] text-[20px] font-[400] ml-[8.5px]">1 шт.</h3>
-                        </div>
-                        <div className="flex items-center gap-[21px] sm:gap-[10px] sm:mt-[50px] mb-[32px]">
-                            <button className="flex items-center gap-[5px] sm:py-[10px] sm:px-[15px] py-[20px] px-[30px] border-[2px] border-[#FBD029] transition-all duration-300 hover:bg-[#FBD029] active:bg-[#FFF] rounded-[5px] bg-[#FFF]">
-                                <Image src={Add} alt="add" />Корзина
-                            </button>
-                            <button className="flex items-center gap-[5px] sm:py-[10px] sm:px-[15px] py-[20px] px-[30px] border-[2px] border-[#FBD029] transition-all duration-300 hover:bg-[#FBD029] active:bg-[#FFF] rounded-[5px] bg-[#FFF]">
-                                <Image src={Control} alt="control" />Сравнить
-                            </button>
-                        </div>
-                        <button className="flex items-center gap-[5px]">
-                            <i className='bx bx-share-alt'></i>Поделиться
-                        </button>
-                    </div>
+                            <div className="title sm:pt-[30px] sm:pl-[20px] pt-[50px] bg-[#FFF] sm:w-full rounded-[5px] sm:h-[490px] w-[503px] h-[539px] pl-[52px] pr-[80px] pb-[34px]">
+                                <h2 className="text-[32px] mb-[16px] text-[#1F1D14] sm:text-[20px] sm:mb-[5px] w-[307px] font-[500] leading-[34px]">Гантель виниловая, 2 х 3 кг</h2>
+                                <p className="mb-[20px] sm:text-[14px] sm:mb-[10px]">В составе томатов в большом количестве содержатся сахара, клетчатка, пектины, бета-каротин, витамины.</p>
+                                <div className="flex items-center gap-[10px] mb-[15px]">
+                                    <h2 className="text-[16px] font-[400] sm:text-[14px] text-[#1F1D14]">В комлекте:</h2>
+                                    <h2 className="text-[20px] sm:text-[16px] text-[#1F1D14] font-[500]">2 шт.</h2>
+                                </div>
+                                <div className="flex items-center gap-[10px] mb-[26px]">
+                                    <h2 className="text-[16px] sm:text-[14px] font-[400] text-[#1F1D14]">Страна производства:</h2>
+                                    <h2 className="text-[20px] sm:text-[16px] text-[#1F1D14] font-[500]">Китай</h2>
+                                </div>
+                                <div className="flex items-center mb-[25px]">
+                                    <h2 className="text-[#1F1D14] sm:text-[20px] text-[24px] font-[500]">220 000</h2>
+                                    <h3 className="text-[#1F1D14] opacity-[0.8] text-[20px] font-[400] sm:text-[16px] sm:bottom-[10px] relative ml-[5px] mr-[8.5px] top-[5px]">uzs</h3>
+                                    <h3>|</h3>
+                                    <h3 className="text-[#1F1D14] sm:text-[16px] text-[20px] font-[400] ml-[8.5px]">1 шт.</h3>
+                                </div>
+                                <div className="flex items-center gap-[21px] sm:gap-[10px] sm:mt-[50px] mb-[32px]">
+                                    <button className="flex items-center gap-[5px] sm:py-[10px] sm:px-[15px] py-[20px] px-[30px] border-[2px] border-[#FBD029] transition-all duration-300 hover:bg-[#FBD029] active:bg-[#FFF] rounded-[5px] bg-[#FFF]">
+                                        <Image src={Add} alt="add" />Корзина
+                                    </button>
+                                    <button className="flex items-center gap-[5px] sm:py-[10px] sm:px-[15px] py-[20px] px-[30px] border-[2px] border-[#FBD029] transition-all duration-300 hover:bg-[#FBD029] active:bg-[#FFF] rounded-[5px] bg-[#FFF]">
+                                        <Image src={Control} alt="control" />Сравнить
+                                    </button>
+                                </div>
+                                <button className="flex items-center gap-[5px]">
+                                    <i className='bx bx-share-alt'></i>Поделиться
+                                </button>
+                            </div>
                 </div>
 
                 <div className="flex sm:flex-col items-center justify-between mb-[81px]">

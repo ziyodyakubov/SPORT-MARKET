@@ -19,6 +19,10 @@ const Index = ({ favoriteCount }) => {
     router.push("/korzina");
   };
 
+  const handleWishlist = () =>{
+    router.push('/wishlist')
+  }
+
   const responsiveNav = () => {
     setNavVisible(!navVisible);
   };
@@ -77,7 +81,7 @@ const Index = ({ favoriteCount }) => {
               <div onClick={handleOpen} className="p-[13px] sm:p-[8px] hover:bg-[#CCCCCC] active:bg-[#F2F2F2] transition-all duration-300 bg-[#F2F2F2] rounded-[3px] cursor-pointer">
                 <i className='text-[20px] sm:text-[16px] bx bx-user'></i>
               </div>
-              <div className="p-[13px] sm:p-[8px] hover:bg-[#CCCCCC] active:bg-[#F2F2F2] transition-all duration-300 bg-[#F2F2F2] rounded-[3px] cursor-pointer">
+              <div onClick={handleWishlist} className="p-[13px] sm:p-[8px] hover:bg-[#CCCCCC] active:bg-[#F2F2F2] transition-all duration-300 bg-[#F2F2F2] rounded-[3px] cursor-pointer">
                 <i className='bx text-[20px] sm:text-[16px] bx-heart'></i>
               </div>
               <button onClick={handleNav} className="px-[30px] sm:py-[8px] sm:hidden sm:px-[20px] h-[45px] py-[25px] hover:bg-[#CCCCCC] active:bg-[#F2F2F2] transition-all duration-300 rounded-[5px] bg-[#F2F2F2] cursor-pointer flex items-center gap-[10px]">
